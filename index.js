@@ -16,3 +16,14 @@ function exactMatch(drivers, attr) {
     }
   })
 }
+
+function extendedDrivers(drivers, attr) {
+  return drivers.filter(function(driver) {
+    for(const key in attr) {
+      if (driver[key] == attr[key]) {
+        return `${driver.name}`;
+      }
+    }
+  })
+}
+
