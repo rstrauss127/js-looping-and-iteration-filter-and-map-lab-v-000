@@ -14,5 +14,5 @@ function exactMatch(drivers, attr) {
         return true;
       }
     }
-  }).map(driver => `${driver.name}`);
+  })
 }
