@@ -21,8 +21,8 @@ function exactMatchToList(drivers, attr) {
   return drivers.filter(function(driver) {
     for(const key in attr) {
       if (driver[key] == attr[key]) {
-        return true;
+        return `${driver.name}`;
       }
     }
-  }).map(driver => `${driver.name}`);
+  })
 }
